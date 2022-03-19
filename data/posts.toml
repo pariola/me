@@ -1,0 +1,19 @@
+[[medium]]
+date = "2018-01-28T00:00:00+01:00"
+title = "Using ES6+ in Firebase Functions with Babel"
+link = "https://medium.com/@pariola/using-es6-in-cloud-functions-387af36bcee3"
+
+[[medium]]
+date = "2018-01-30T00:00:00+01:00"
+title = "Hacking up a Command Line Interface with NodeJS 🔥"
+link = "https://medium.com/@pariola/ever-wondered-how-javascript-frameworks-like-angular-firebase-tools-and-many-much-more-create-e3023cff9596"
+
+[[medium]]
+date = "2018-06-24T00:00:00+01:00"
+title = "Automating your production server setup"
+link = "https://medium.com/@pariola/get-your-nodejs-server-running-with-a-simple-script-82f12cbaf7d"
+
+[[medium]]
+date = "2018-12-23T00:00:00+01:00"
+title = "Using the middleware pattern in now.sh"
+link = "https://medium.com/@pariola/using-the-middleware-pattern-in-now-sh-9ac5257f2bb2"

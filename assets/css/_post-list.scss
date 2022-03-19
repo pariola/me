@@ -1,0 +1,15 @@
+.post-list {
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  &-item__date {
+    color: $secondary-color;
+    font-size: 0.875rem;
+  }
+}

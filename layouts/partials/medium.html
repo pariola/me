@@ -1,0 +1,11 @@
+<section class="post-list">
+  <h3>Medium Posts</h3>
+  <ul>
+    {{ range .posts }}
+    <li>
+      <a href="{{.link}}"><span>{{.title}}</span></a>
+      <span class="post-list-item__date">{{ dateFormat "Jan 2, 2006" .date}}</span>
+    </li>
+    {{end}}
+  </ul>
+</section>

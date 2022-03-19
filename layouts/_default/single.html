@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="post">
+  <h1>{{ .Title }}</h1>
+  <div class="post-meta">
+    {{ if (gt .Page.PublishDate 0)}}
+    <span>{{ .Page.PublishDate.Format "Jan 2, 2006" }}</span>
+    {{ end }}
+  </div>
+  <div class="post-content">{{.Content}}</div>
+</article>
+{{ end }}

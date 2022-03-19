@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{{ .Title }}</title>
+
+    <!--  -->
+    {{ $scss := resources.Get "css/main.scss" | resources.ToCSS |
+    resources.Minify }}
+    <link href="{{ $scss.RelPermalink }}" rel="stylesheet" />
+
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+    />
+
+    <!--  -->
+    <!-- TODO: Show only on production. Cloudflare isn't passing env variables to Hugo to be used as (getenv "ENV") -->
+    {{- if (and (not .Site.IsServer)) -}}
+    <link rel="preconnect" href="https://www.google-analytics.com/" />
+    {{ template "_internal/google_analytics.html" . }} {{- end -}}
+  </head>
+  <body>
+    <div class="container">
+      {{- block "header" . }}{{ partial "header.html" .}}{{- end }}
+      <div class="main">{{ block "main" . }}{{end}}</div>
+    </div>
+  </body>
+</html>

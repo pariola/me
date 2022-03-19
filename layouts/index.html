@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="home">
+  <div class="bio">
+    <div class="bio__description">
+      <h1>Hi, I'm Blessing</h1>
+      <p>a software engineer, living and working from Rotterdam.</p>
+      <p>
+        Over the years, I have built a few
+        <a href="/projects">side projects</a> and contributed to some
+        <a href="https://github.com/pariola?tab=repositories&type=public"
+          >open source</a
+        >
+        projects. I write sometimes about what i'm learning at that time.
+      </p>
+      <p>
+        I'd love to hear from you. You can find me on
+        <a href="https://github.com/pariola">Github</a> or reach me through
+        <a href="mailto:blessingpariola@zoho.com">Email</a>.
+      </p>
+    </div>
+  </div>
+
+  {{ $posts := where .Site.RegularPages "Section" "in" (slice "p") }}
+
+  <!-- All Posts -->
+  {{ partial "p.html" (dict "posts" $posts "title" "Posts" ) }}
+
+  <!-- Medium -->
+  {{ $mediumPosts := sort .Site.Data.posts.medium "date" "desc" }}
+  <!--  -->
+  {{ partial "medium.html" (dict "posts" $mediumPosts) }}
+</div>
+{{ end }}

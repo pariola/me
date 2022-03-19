@@ -1,0 +1,81 @@
+@import "header";
+@import "variables";
+@import "buttondown";
+@import "post-list";
+@import "bio";
+@import "post";
+// @import "syntax";
+@import "home";
+
+html,
+body {
+  font-size: 16px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 20px 0 0;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+body {
+  line-height: 1.7;
+  color: $body-color;
+  font-family: $body-font;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: $body-font;
+}
+
+hr {
+  border: 1px solid $border-color;
+}
+
+.sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  left: -9999px;
+  top: -9999px;
+}
+
+.container {
+  position: relative;
+  max-width: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 15px 100px;
+}
+
+li {
+  margin: 0.4rem 0;
+}
+
+section.shelf a.perfect-book-link {
+  font-weight: bold;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: $primary-color;
+  text-underline-offset: 0.5px;
+  text-decoration-thickness: 2px;
+}
+
+span.square {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  background: black;
+}
