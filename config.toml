@@ -4,5 +4,5 @@ title = 'Blessing Pariola'
 googleAnalytics = "UA-120073649-1"
 
 [markup.highlight]
-style = 'github'
+style = 'tango'
 tabWidth = 2
