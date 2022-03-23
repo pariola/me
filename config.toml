@@ -1,7 +1,7 @@
 baseURL = 'https://blessing.pario.la'
 languageCode = 'en-us'
 title = 'Blessing Pariola'
-googleAnalytics = "UA-120073649-1"
+googleAnalytics = "G-MYQY3V2MKT"
 
 [markup.highlight]
 style = 'tango'
