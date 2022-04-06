@@ -1,0 +1,14 @@
+{{ $title := .Get "title" }} {{ $src := .Get "src" }} {{ $href := .Get "href" }}
+{{ $alt := .Get "alt" }} {{ $caption := .Get "caption" }}
+
+<p>
+  <a
+    title="{{ $title }}"
+    href="{{ $href }}"
+    target="_blank"
+    rel="noopener"
+    class="image-link"
+    ><img alt="{{ $alt }}" src="{{ $src }}"
+  /></a>
+  <span class="image-caption">{{ $caption }}</span>
+</p>
